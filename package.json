@@ -1,0 +1,25 @@
+{
+  "name": "upgradable_erc721_sample",
+  "version": "1.0.0",
+  "description": "upgradable ERC721 token sample with ZeppelinOS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shiruco/upgradable-ERC721-sample.git"
+  },
+  "author": "shiruco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shiruco/upgradable-ERC721-sample/issues"
+  },
+  "homepage": "https://github.com/shiruco/upgradable-ERC721-sample#readme",
+  "dependencies": {
+    "openzeppelin-eth": "^2.1.3",
+    "truffle": "^5.0.4",
+    "zos-lib": "^2.2.0"
+  },
+  "devDependencies": {}
+}

@@ -1,0 +1,6 @@
+node_modules
+build
+.zos.session
+.DS_Store
+zos.*.json
+zos.json
