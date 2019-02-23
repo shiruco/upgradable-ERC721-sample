@@ -7,7 +7,7 @@ upgradable ERC721 token sample with ZeppelinOS
 - Solidity v0.5.0 (solc-js)
 - Node v11.3.0
 
-# commands
+# Deploy with Truffle
 
 #### initialize zos
 ```
@@ -27,4 +27,32 @@ $ truffle migrate --network local
 # test
 ```
 $ truffle test --network local
+```
+
+# Deploy with zos command
+
+#### initialize zos
+```
+$ zos init sample-pj
+```
+
+#### start ganache
+```
+$ ganache-cli -p 7545 -d
+```
+
+#### add contract
+
+#### deoloy v0
+```
+$ zos add SampleToken
+$ zos push --network local
+$ zos create SampleToken --init initialize --args="SampleToken,STKN" --network local
+```
+
+#### update v1
+```
+$ zos add SampleToken_v1:SampleToken
+$ zos push --network local
+$ zos update SampleToken --network local
 ```
