@@ -24,10 +24,7 @@ $ ganache-cli -p 7545 -d
 $ truffle migrate --network local
 ```
 
-#### test
+# test
 ```
-$ truffle console --network local
-truffle(local)> SampleToken.deployed().then(t => token = t)
-truffle(local)> token.version()
-truffle(local)> "v1"  <===== updated!!
+$ truffle test --network local
 ```
