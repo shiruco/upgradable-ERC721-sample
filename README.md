@@ -36,8 +36,6 @@ $ zos init sample-pj
 $ ganache-cli -p 7545 -d
 ```
 
-#### add contract
-
 #### deoloy v0
 ```
 $ zos add SampleToken
