@@ -24,11 +24,6 @@ $ ganache-cli -p 7545 -d
 $ truffle migrate --network local
 ```
 
-# test
-```
-$ truffle test --network local
-```
-
 # Deploy with zos command
 
 #### initialize zos
@@ -55,4 +50,9 @@ $ zos create SampleToken --init initialize --args="SampleToken,STKN" --network l
 $ zos add SampleToken_v1:SampleToken
 $ zos push --network local
 $ zos update SampleToken --network local
+```
+
+# test
+```
+$ truffle test --network local
 ```
