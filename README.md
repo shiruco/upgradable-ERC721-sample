@@ -2,6 +2,9 @@
 
 upgradable ERC721 token sample with ZeppelinOS
 
+related post
+https://medium.com/@maroton621
+
 # env
 - Truffle v5.0.4 (core: 5.0.4)
 - Solidity v0.5.0 (solc-js)
