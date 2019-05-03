@@ -9,7 +9,7 @@
     "zos-init": "zos init sample-pj",
     "start-ganache": "ganache-cli -p 7545 -d -q -v",
     "truffle-migrate": "truffle migrate --network local",
-    "truffle-test": "truffle test"
+    "truffle-test": "truffle test --network local"
   },
   "repository": {
     "type": "git",

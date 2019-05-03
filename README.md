@@ -55,5 +55,6 @@ $ zos update SampleToken --network local
 
 # test
 ```
-$ truffle test --network local
+$ yarn start-ganache
+$ yarn test
 ```
