@@ -3,9 +3,14 @@ jobs:
   build:
     docker:
       - image: circleci/node:11.3.0
+      - image: trufflesuite/ganache-cli
+        command: ganache-cli -p 7545 -d -q -v
+
     working_directory: ~/repo
+
     steps:
       - checkout
+
       - restore_cache:
           keys:
             - v1-dependencies-{{ checksum "package.json" }}
@@ -18,5 +23,4 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
 
-      - run: yarn start-ganache
       - run: yarn test
