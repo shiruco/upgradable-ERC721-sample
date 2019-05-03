@@ -4,9 +4,9 @@
   "description": "upgradable ERC721 token sample with ZeppelinOS",
   "main": "index.js",
   "scripts": {
-    "test": "npm-run-all -s clean init start-ganache truffle-migrate truffle-test",
+    "test": "npm-run-all -s clean zos-init truffle-migrate truffle-test",
     "clean": "rimraf build zos.json zos.*.json",
-    "init": "zos init sample-pj",
+    "zos-init": "zos init sample-pj",
     "start-ganache": "ganache-cli -p 7545 -d -q -v",
     "truffle-migrate": "truffle migrate --network local",
     "truffle-test": "truffle test"
