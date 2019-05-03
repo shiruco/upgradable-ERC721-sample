@@ -3,7 +3,14 @@
   "version": "1.0.0",
   "description": "upgradable ERC721 token sample with ZeppelinOS",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "npm-run-all -s clean init start-ganache truffle-migrate truffle-test",
+    "clean": "rimraf build zos.json zos.*.json",
+    "init": "zos init sample-pj",
+    "start-ganache": "ganache-cli -p 7545 -d -q -v",
+    "truffle-migrate": "truffle migrate --network local",
+    "truffle-test": "truffle test"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/shiruco/upgradable-ERC721-sample.git"
@@ -21,6 +28,8 @@
     "zos-lib": "^2.2.3"
   },
   "devDependencies": {
-    "ganache-cli": "^6.4.3"
+    "ganache-cli": "^6.4.3",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^2.6.3"
   }
 }

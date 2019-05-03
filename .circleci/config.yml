@@ -17,7 +17,5 @@ jobs:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
-      - run: zos init sample-pj
-      - run: ganache-cli -p 7545 -d
-      - run: truffle migrate --network local
+
       - run: yarn test
